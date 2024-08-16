@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fooddelivery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/delivery"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/delivery"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodDelivery"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".manageschedule"
+            android:exported="false" />
+        <activity
+            android:name=".addtimeschedule"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+
+        <service android:name=".LocationService" />
+
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".Login1"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".sendcomplaint"
+            android:exported="false" />
+
+        <activity
+            android:name=".editschedule"
+            android:exported="false" />
+        <activity
+            android:name=".viewschedulestatus"
+            android:exported="false" />
+        <activity
+            android:name=".shoprating"
+            android:exported="false" />
+        <activity
+            android:name=".viewmycart"
+            android:exported="false" />
+        <activity
+            android:name=".cart"
+            android:exported="false" />
+        <activity
+            android:name=".viewitems"
+            android:exported="false" />
+        <activity
+            android:name=".viewrestaurant"
+            android:exported="false" />
+        <activity
+            android:name=".userhome"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivityy"
+            android:exported="false" />
+        <activity
+            android:name=".LocationService"
+            android:exported="false" />
+        <activity
+            android:name=".vieworderstatus"
+            android:exported="false" />
+        <activity
+            android:name=".agenthome"
+            android:exported="false" />
+        <activity
+            android:name=".viewworkassigned"
+            android:exported="false" />
+        <activity
+            android:name=".statusupdationofdelivery"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
